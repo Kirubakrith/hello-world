@@ -22,11 +22,16 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+    <!--<repository>
+      <id>central</id>
+      <name>libs-release</name>
+      <url>http://repo.vegicorp.net/artifactory/libs-release</url>
+    </repository>-->
+    <snapshotRepository>
+      <id>Snapshot</id>
+      <name>nexus-snapshot-repo</name>
+      <url>http://54.242.119.241:8081/repository/nexus-snapshot-repo</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
